@@ -98,7 +98,7 @@ defmodule Mailgun.Client do
   end
 
   def send_email(conf, email) do
-    do_send_email(conf[:mode], conf, email)
+    do_send_email(conf[:mode], conf, email |> Enum.into(%{}))
   end
   defp do_send_email(:test, conf, email) do
     log_email(conf, email)
