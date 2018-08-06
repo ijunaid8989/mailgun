@@ -4,7 +4,7 @@ defmodule Mailgun.Mixfile do
   def project do
     [app: :mailgun,
      version: "0.1.4",
-     elixir: "~> 1.4.1",
+     elixir: "~> 1.7.1",
      deps: deps(),
      package: [
        contributors: ["Chris McCord"],
